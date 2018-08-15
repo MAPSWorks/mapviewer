@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="/MapViewer">
+    <file>Resources/delCon.png</file>
+    <file>Resources/addCon.png</file>
+    <file>Resources/2c1.png</file>
+    <file>Resources/2c3.png</file>
+    <file>Resources/AK-74.png</file>
+    <file>Resources/BMP3.png</file>
+    <file>Resources/gp-30.png</file>
+    <file>Resources/Grad.png</file>
+    <file>Resources/MSTA-S.png</file>
+    <file>Resources/MTLB.png</file>
+    <file>Resources/NSV.png</file>
+    <file>Resources/PKM.png</file>
+    <file>Resources/Podnos.png</file>
+    <file>Resources/PTRK9R148.png</file>
+    <file>Resources/Rapira.png</file>
+    <file>Resources/RPG7V.png</file>
+    <file>Resources/sniper1.png</file>
+    <file>Resources/T80.png</file>
+    <file>N00.png</file>
+    <file>Resources/AGS-17.png</file>
+    <file>Resources/blu.png</file>
+    <file>Resources/Grey2.png</file>
+    <file>Resources/Red2.png</file>
+    <file>Resources/yellow2.png</file>
+    <file>Resources/grey.png</file>
+    <file>Resources/red.png</file>
+    <file>Resources/yellow.png</file>
+    <file>Resources/Image00005.png</file>
+  </qresource>
+</RCC>

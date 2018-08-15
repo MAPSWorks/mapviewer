@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MapViewerClass</class>
+ <widget class="QMainWindow" name="MapViewerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1223</width>
+    <height>877</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MapViewer</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1211</width>
+      <height>821</height>
+     </rect>
+    </property>
+    <property name="dragMode">
+     <enum>QGraphicsView::ScrollHandDrag</enum>
+    </property>
+    <property name="cacheMode">
+     <set>QGraphicsView::CacheNone</set>
+    </property>
+    <property name="transformationAnchor">
+     <enum>QGraphicsView::AnchorUnderMouse</enum>
+    </property>
+    <property name="resizeAnchor">
+     <enum>QGraphicsView::AnchorUnderMouse</enum>
+    </property>
+    <property name="viewportUpdateMode">
+     <enum>QGraphicsView::BoundingRectViewportUpdate</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>274</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>256</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>120</red>
+           <green>120</green>
+           <blue>120</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::InternalMove</enum>
+     </property>
+     <property name="defaultDropAction">
+      <enum>Qt::MoveAction</enum>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="movement">
+      <enum>QListView::Free</enum>
+     </property>
+     <property name="resizeMode">
+      <enum>QListView::Adjust</enum>
+     </property>
+     <property name="viewMode">
+      <enum>QListView::ListMode</enum>
+     </property>
+     <property name="selectionRectVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addPointTable">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_mark">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>256</width>
+       <height>81</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>410</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Сообщения</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="text_log">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>430</y>
+       <width>256</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="autoFormatting">
+      <set>QTextEdit::AutoAll</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>550</y>
+       <width>251</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>128</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send_text">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>580</y>
+       <width>123</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Отправить сообщение</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="endAddPoint">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Прервать</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addMark">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>140</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Цель</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refresh">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="mapviewer.qrc">
+       <normaloff>:/MapViewer/N00.png</normaloff>:/MapViewer/N00.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_command">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>620</y>
+       <width>256</width>
+       <height>101</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_sendCommand">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>760</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Отправить команду</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send_allUsers">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>580</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Отправить всем</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_sendCommandAll">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>760</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Отправить команду всем</string>
+     </property>
+    </widget>
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>256</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <attribute name="headerVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="headerMinimumSectionSize">
+      <number>10</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Индекс</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="addPath_button">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить путь</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>380</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>510</y>
+      <width>251</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <widget class="QTextEdit" name="text_infoObject">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>10</y>
+      <width>231</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="autoScroll">
+     <bool>false</bool>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>200</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="mapviewer.qrc">
+       <normaloff>:/MapViewer/Resources/Red2.png</normaloff>:/MapViewer/Resources/Red2.png</iconset>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="mapviewer.qrc">
+       <normaloff>:/MapViewer/Resources/yellow2.png</normaloff>:/MapViewer/Resources/yellow2.png</iconset>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="mapviewer.qrc">
+       <normaloff>:/MapViewer/Resources/Grey2.png</normaloff>:/MapViewer/Resources/Grey2.png</iconset>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Состояние</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>Есть соединение. Есть навигация.</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>Есть соединение. Нет навигации.</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>Нет соединения.</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QListWidget" name="listWidget_images">
+    <property name="geometry">
+     <rect>
+      <x>935</x>
+      <y>170</y>
+      <width>251</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>160</width>
+      <height>160</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1223</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="actionClear"/>
+   </widget>
+   <widget class="QMenu" name="menuConf">
+    <property name="title">
+     <string>conf</string>
+    </property>
+    <addaction name="actionTrailItems"/>
+    <addaction name="actionLayers"/>
+    <addaction name="actionPictures"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuConf"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>10</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>36</width>
+     <height>36</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+  </action>
+  <action name="actionTrailItems">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>trailItems</string>
+   </property>
+  </action>
+  <action name="actionLayers">
+   <property name="text">
+    <string>layers</string>
+   </property>
+  </action>
+  <action name="actionPictures">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>pictures</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mapviewer.qrc"/>
+ </resources>
+ <connections/>
+</ui>

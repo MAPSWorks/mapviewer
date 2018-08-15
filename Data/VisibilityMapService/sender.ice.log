@@ -1,0 +1,61 @@
+-- 10/03/12 13:28:06.153 D:/2/VisibilityMapService.exe: Network: accepting tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:28:06.153 D:/2/VisibilityMapService.exe: Network: published endpoints for object adapter `ports':
+   tcp -h 192.168.1.192 -p 11136
+-- 10/03/12 13:28:06.153 D:/2/VisibilityMapService.exe: Network: tcp connection established
+   local address = 192.168.1.192:57779
+   remote address = 192.168.1.192:11111
+-- 10/03/12 13:28:06.699 D:/2/VisibilityMapService.exe: Network: accepted tcp connection
+   local address = 192.168.1.192:11136
+   remote address = 192.168.1.192:57782
+-- 10/03/12 13:28:09.336 D:/2/VisibilityMapService.exe: Network: stopping to accept tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:28:09.336 D:/2/VisibilityMapService.exe: Network: closing tcp connection
+   local address = 192.168.1.192:11136
+   remote address = 192.168.1.192:57782
+-- 10/03/12 13:28:23.610 D:/2/VisibilityMapService.exe: Network: accepting tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:28:23.610 D:/2/VisibilityMapService.exe: Network: published endpoints for object adapter `ports':
+   tcp -h 192.168.1.192 -p 11136
+-- 10/03/12 13:28:23.610 D:/2/VisibilityMapService.exe: Network: tcp connection established
+   local address = 192.168.1.192:57804
+   remote address = 192.168.1.192:11111
+-- 10/03/12 13:28:24.936 D:/2/VisibilityMapService.exe: Network: stopping to accept tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:28:37.624 D:/2/VisibilityMapService.exe: Network: accepting tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:28:37.625 D:/2/VisibilityMapService.exe: Network: published endpoints for object adapter `ports':
+   tcp -h 192.168.1.192 -p 11136
+-- 10/03/12 13:28:37.626 D:/2/VisibilityMapService.exe: Network: tcp connection established
+   local address = 192.168.1.192:57824
+   remote address = 192.168.1.192:11111
+-- 10/03/12 13:28:39.736 D:/2/VisibilityMapService.exe: Network: stopping to accept tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:28:40.609 D:/2/VisibilityMapService.exe: Network: accepting tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:28:40.609 D:/2/VisibilityMapService.exe: Network: published endpoints for object adapter `ports':
+   tcp -h 192.168.1.192 -p 11136
+-- 10/03/12 13:28:40.609 D:/2/VisibilityMapService.exe: Network: tcp connection established
+   local address = 192.168.1.192:57827
+   remote address = 192.168.1.192:11111
+-- 10/03/12 13:28:41.608 D:/2/VisibilityMapService.exe: Network: stopping to accept tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:30:16.550 D:/2/VisibilityMapService.exe: Network: accepting tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:30:16.550 D:/2/VisibilityMapService.exe: Network: published endpoints for object adapter `ports':
+   tcp -h 192.168.1.192 -p 11136
+-- 10/03/12 13:30:16.550 D:/2/VisibilityMapService.exe: Network: tcp connection established
+   local address = 192.168.1.192:57967
+   remote address = 192.168.1.192:11111
+-- 10/03/12 13:30:16.893 D:/2/VisibilityMapService.exe: Network: accepted tcp connection
+   local address = 192.168.1.192:11136
+   remote address = 192.168.1.192:57968
+-- 10/03/12 13:30:18.312 D:/2/VisibilityMapService.exe: Network: stopping to accept tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:31:20.790 D:/2/VisibilityMapService.exe: Network: accepting tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:31:20.790 D:/2/VisibilityMapService.exe: Network: published endpoints for object adapter `ports':
+   tcp -h 192.168.1.192 -p 11136
+-- 10/03/12 13:31:20.790 D:/2/VisibilityMapService.exe: Network: tcp connection established
+   local address = 192.168.1.192:57973
+   remote address = 192.168.1.192:11111
+-- 10/03/12 13:31:21.992 D:/2/VisibilityMapService.exe: Network: accepted tcp connection
+   local address = 192.168.1.192:11136
+   remote address = 192.168.1.192:57974
+-- 10/03/12 13:31:22.226 D:/2/VisibilityMapService.exe: Network: stopping to accept tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:31:27.998 D:/2/VisibilityMapService.exe: Network: accepting tcp connections at 192.168.1.192:11136
+-- 10/03/12 13:31:28.013 D:/2/VisibilityMapService.exe: Network: published endpoints for object adapter `ports':
+   tcp -h 192.168.1.192 -p 11136
+-- 10/03/12 13:31:28.013 D:/2/VisibilityMapService.exe: Network: tcp connection established
+   local address = 192.168.1.192:57976
+   remote address = 192.168.1.192:11111
+-- 10/03/12 13:31:29.355 D:/2/VisibilityMapService.exe: Network: stopping to accept tcp connections at 192.168.1.192:11136
